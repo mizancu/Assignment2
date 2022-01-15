@@ -1,0 +1,42 @@
+body{
+    margin: 20px;
+}
+.heading-img{
+    display: flex;
+}
+.heading{
+    width: 50%;
+}
+.heading-a{
+    text-decoration: none;
+    border: 1px solid gray;
+    background-color:#E83A59;
+    color: white;
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 30px;
+}
+.img1{
+    width: 50%;
+}
+.main-div{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    
+}
+.fas{
+    color: #A77B06;
+}
+/* -------------
+Footer style 
+---------------*/
+footer{
+    padding: 20px;
+    text-align: center;
+    align-items: center;
+    background-color: #120E43;
+    color: white;
+}
+.fab{
+    margin-left: 20px;
+}
