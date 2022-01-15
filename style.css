@@ -1,6 +1,9 @@
 body{
     margin: 20px;
 }
+/* --------------
+Header styles
+--------------- */
 .heading-img{
     display: flex;
 }
@@ -16,15 +19,22 @@ body{
     padding: 10px;
     border-radius: 30px;
 }
+.fa-arrow-right{
+    color: white;
+
+}
 .img1{
     width: 50%;
 }
+/* -------------
+main style
+---------------- */
 .main-div{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     
 }
-.fas{
+.fa-star, .fa-star-half-alt{
     color: #A77B06;
 }
 /* -------------
