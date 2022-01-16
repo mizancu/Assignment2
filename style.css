@@ -1,5 +1,8 @@
 body{
-    margin: 20px;
+    margin: auto;
+    padding: 20px;
+    font-family: 'Montserrat', sans-serif;
+    
 }
 /* --------------
 Header styles
@@ -23,8 +26,37 @@ Header styles
     color: white;
 
 }
-.img1{
-    width: 50%;
+    
+.heading-image{
+        display: flex;
+        
+    }
+
+  /* -----------------------------
+  Responsive styles for mobile  
+  --------------------------------*/
+
+@media only screen and (max-width: 480px) {
+    .first-h1 {
+      text-align: center;
+    } 
+    
+    .image {
+        width: 50%;
+        height: 50%;
+    }
+}
+/* -----------------------------
+  Responsive styles for tablet  
+  --------------------------------*/
+  @media only screen and (min-width: 481px)and (max-width:767px) {
+    .first-h1 {
+      text-align: center;
+    }
+    .heading-image{
+        display: flex;
+        flex-direction: column-reverse;
+    }
 }
 /* -------------
 main style
@@ -32,10 +64,39 @@ main style
 .main-div{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
     
 }
 .fa-star, .fa-star-half-alt{
     color: #A77B06;
+}
+/* -----------------------------
+  Responsive styles for mobile  
+  --------------------------------*/
+
+  @media only screen and (max-width: 480px) {
+    .main-div {
+        display: flex;
+        flex-direction: column;
+        max-width: 480px;
+        background-color: powderblue;
+    }
+       
+}
+/* -----------------------------
+  Responsive styles for tablet  
+  --------------------------------*/
+
+@media only screen and (max-width:767px){
+    .main-div{
+        margin: auto;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .tripod-img .tripod-details{
+        width: 50%;
+    }
+       
 }
 /* -------------
 Footer style 
